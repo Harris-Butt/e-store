@@ -49,7 +49,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="products" element={<ProductHomePage />}>
             <Route path="/" element={<ProductList />} />
             <Route path=":gender" element={<GenderProducts />}>
