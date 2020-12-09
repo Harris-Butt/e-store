@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.productImage > img {
+  background-color: blue;
+  width: 100%;
+}
+.productImage > img:nth-child(1) {
+  grid-column: 2 / span 3;
+}
