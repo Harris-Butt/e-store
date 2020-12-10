@@ -1,0 +1,5 @@
+.gender__selector {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}

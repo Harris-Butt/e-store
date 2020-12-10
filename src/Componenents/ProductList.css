@@ -4,9 +4,15 @@
   gap: 20px;
 }
 .productImage > img {
-  background-color: blue;
-  width: 100%;
+  width: 320.5px;
+  height: 450.53px;
 }
-.productImage > img:nth-child(1) {
-  grid-column: 2 / span 3;
+.productImage:nth-child(5n + 1) {
+  justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.productImage:nth-child(5n + 1) > img {
+  width: auto;
+  height: auto;
 }
