@@ -1,13 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Componenents/Header";
 import ProductHomePage from "./Componenents/ProductHomePage";
-import Product from "./Componenents/Product";
 import ProductList from "./Componenents/ProductList";
 import Home from "./Componenents/Home";
 import React, { useReducer } from "react";
 import products from "./Products";
-import GenderSelector from "./Componenents/GenderSelector";
 import GenderProducts from "./Componenents/GenderProducts";
 import TypeProduct from "./Componenents/TypeProduct";
 import ProductDetail from "./Componenents/ProductDetail";

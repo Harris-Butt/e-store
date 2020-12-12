@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../App";
 import "./ProductList.css";
@@ -12,7 +12,7 @@ function IsGenderValueSet(gender) {
 }
 
 function AreBothGenderAndWearTypeValuesSet(gender, wearType) {
-  if ((gender !== "") & (wearType !== "")) {
+  if (gender !== "" && wearType !== "") {
     return true;
   } else {
     return false;
@@ -37,7 +37,7 @@ function ProductList() {
               .map((product) => (
                 <div className="productImage">
                   <Link to={`${product.title}`}>
-                    <img src={product.mainImage} />
+                    <img src={product.mainImage} alt="" />
                   </Link>
                 </div>
               ))
@@ -49,14 +49,14 @@ function ProductList() {
               .map((product) => (
                 <div className="productImage">
                   <Link to={`${product.type}/${product.title}`}>
-                    <img src={product.mainImage} />
+                    <img src={product.mainImage} alt="" />
                   </Link>
                 </div>
               ))
           : appContext.productList.map((product) => (
               <div className="productImage">
                 <Link to={`${product.gender}/${product.type}/${product.title}`}>
-                  <img src={product.mainImage} />
+                  <img src={product.mainImage} alt="" />
                 </Link>
               </div>
             ))}

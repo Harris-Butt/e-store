@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 function Header() {
   return (

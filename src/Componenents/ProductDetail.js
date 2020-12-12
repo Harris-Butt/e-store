@@ -18,7 +18,7 @@ function ProductDetail() {
       <div className="column1">
         {desireProduct.secondaryImages.map((image) => (
           <div className="product__image">
-            <img src={image} />
+            <img src={image} alt="" />
           </div>
         ))}
       </div>

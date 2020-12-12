@@ -1,5 +1,3 @@
-import ProductList from "./Componenents/ProductList";
-
 const products = [
   {
     type: "jackets",
