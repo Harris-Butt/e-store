@@ -1,0 +1,8 @@
+.wearType__selector {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.wearType__button {
+  color: red;
+}

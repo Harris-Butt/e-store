@@ -7,11 +7,13 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 function Header() {
   return (
     <div className="header">
-      <img
-        className="header__logo"
-        src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE.png"
-        alt=""
-      />
+      <Link to="/products">
+        <img
+          className="header__logo"
+          src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE.png"
+          alt=""
+        />
+      </Link>
       <div className="header__search">
         <h2>SEARCH</h2>
         <TextField className="header__searchInput" />

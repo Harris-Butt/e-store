@@ -1,0 +1,37 @@
+.product__detail {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.column1 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.column2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product__addToCart {
+  width: 400px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+.product__title > h1 {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+.product__price > span {
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+}
+.product__description {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+}

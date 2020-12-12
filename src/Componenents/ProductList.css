@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
-.productImage > img {
+.productImage img {
   width: 320.5px;
   height: 450.53px;
 }
@@ -12,7 +12,7 @@
   grid-column-start: 1;
   grid-column-end: 5;
 }
-.productImage:nth-child(5n + 1) > img {
+.productImage:nth-child(5n + 1) img {
   width: auto;
   height: auto;
 }

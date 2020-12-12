@@ -10,6 +10,7 @@ import products from "./Products";
 import GenderSelector from "./Componenents/GenderSelector";
 import GenderProducts from "./Componenents/GenderProducts";
 import TypeProduct from "./Componenents/TypeProduct";
+import ProductDetail from "./Componenents/ProductDetail";
 
 export const AppContext = React.createContext();
 
@@ -45,8 +46,8 @@ function App() {
         productList: products,
       }}
     >
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="products" element={<ProductHomePage />}>
@@ -55,6 +56,7 @@ function App() {
               <Route path="/" element={<ProductList />} />
               <Route path=":type" element={<TypeProduct />}>
                 <Route path="/" element={<ProductList />} />
+                <Route path=":productId" element={<ProductDetail />} />
               </Route>
             </Route>
           </Route>

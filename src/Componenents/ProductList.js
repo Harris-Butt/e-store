@@ -34,16 +34,30 @@ function ProductList() {
                   product.gender === appContext.stateValue.gender &&
                   product.type === appContext.stateValue.wearType
               )
-              .map((product) => <img src={product.mainImage} />)
+              .map((product) => (
+                <div className="productImage">
+                  <Link to={`${product.title}`}>
+                    <img src={product.mainImage} />
+                  </Link>
+                </div>
+              ))
           : IsGenderValueSet(appContext.stateValue.gender)
           ? appContext.productList
               .filter(
                 (product) => product.gender === appContext.stateValue.gender
               )
-              .map((product) => <img src={product.mainImage} />)
+              .map((product) => (
+                <div className="productImage">
+                  <Link to={`${product.type}/${product.title}`}>
+                    <img src={product.mainImage} />
+                  </Link>
+                </div>
+              ))
           : appContext.productList.map((product) => (
               <div className="productImage">
-                <img src={product.mainImage} />
+                <Link to={`${product.gender}/${product.type}/${product.title}`}>
+                  <img src={product.mainImage} />
+                </Link>
               </div>
             ))}
       </div>
